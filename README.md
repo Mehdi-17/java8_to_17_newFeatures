@@ -24,3 +24,8 @@ Record are introduce in Java to give a way to describe data. Records are a quick
 It’s important to note that records are immutable, so you can’t change their values after the initialization.
 Here is an example of a simple class called Player with 2 fields (64 lines), and a record of the same structure (4 lines).
 - [Records showcase](https://github.com/Mehdi-17/java8_to_17_newFeatures/blob/main/src/main/java/com/activit/sfeir/Records/RecordsExampleTest.java)
+
+## Text Block
+In traditional Java code, multiline strings could be hard to write with lots of escape characters and concatenation.  
+With the introduction of text blocks in Java, working with multiline strings has become significantly more straightforward and readable.
+- [Text Block example](https://github.com/Mehdi-17/java8_to_17_newFeatures/blob/main/src/main/java/com/activit/sfeir/TextBlock/TextBlockTest.java)
