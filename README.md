@@ -10,5 +10,6 @@ Below, you'll find links to various Java features and enhancements:
  - [Jump to code sample](https://github.com/Mehdi-17/java8_to_17_newFeatures/blob/main/src/main/java/com/activit/sfeir/SwitchSyntax/SwitchSyntaxExampleTest.java)
 
 ## New Pattern Matching for the instanceof operator
-Java 14 introduced a new enhancement called "Pattern Matching for the instanceof operator" which simplifies the code when working with object types.
+Java 14 introduced a new enhancement called "Pattern Matching for the instanceof operator" which simplifies the code when working with object types.  
+With the new syntax, you can create a variable within the if statement to increase readability :
 - [Jump to code sample](https://github.com/Mehdi-17/java8_to_17_newFeatures/blob/main/src/main/java/com/activit/sfeir/Instanceof/InstanceOfUseTest.java)
