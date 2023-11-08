@@ -6,6 +6,7 @@ public class SwitchSyntaxExampleTest {
 
     @Test
     public void switchSyntaxExample() {
+        //Will print the same thing
         oldSwitchSyntax("Pauleta");
         newSwitchSyntax("Pauleta");
     }
