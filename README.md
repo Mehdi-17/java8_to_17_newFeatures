@@ -18,3 +18,9 @@ With the new syntax, you can create a variable within the if statement to increa
 Java introduced type inference since Java 10. They add the 'var' word (not a key word for backward compatibility) to initialize a variable.  
 Type inference doesn't work for class fields.
 - [Discover type inference](https://github.com/Mehdi-17/java8_to_17_newFeatures/blob/main/src/main/java/com/activit/sfeir/TypeInference/TypeInferenceTest.java)
+
+## Records
+Record are introduce in Java to give a way to describe data. Records are a quick and concise because they automatically generates constructors, getter, equals and hash code methods.
+It’s important to note that records are immutable, so you can’t change their values after the initialization.
+Here is an example of a simple class called Player with 2 fields (64 lines), and a record of the same structure (4 lines).
+- [Records showcase](https://github.com/Mehdi-17/java8_to_17_newFeatures/blob/main/src/main/java/com/activit/sfeir/Records/RecordsExampleTest.java)
