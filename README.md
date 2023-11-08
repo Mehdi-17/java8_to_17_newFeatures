@@ -6,5 +6,9 @@ From the readme, you can explore the evolution of the Java language from version
 Below, you'll find links to various Java features and enhancements:
 
 ## New Switch syntax
- Java introduced a new syntax for the switch statement, making it more concise and easier to read.
+ Java 12 introduced a new syntax for the switch statement, making it more concise and easier to read.
  - [Jump to code sample](https://github.com/Mehdi-17/java8_to_17_newFeatures/blob/main/src/main/java/com/activit/sfeir/SwitchSyntax/SwitchSyntaxExampleTest.java)
+
+## New instanceof
+Java 14 introduced a new enhancement called "Pattern Matching for the instanceof operator" which simplifies the code when working with object types.
+- [Jump to code sample](https://github.com/Mehdi-17/java8_to_17_newFeatures/blob/main/src/main/java/com/activit/sfeir/Instanceof/InstanceOfUseTest.java)
