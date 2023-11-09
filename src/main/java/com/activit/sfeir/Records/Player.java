@@ -10,6 +10,9 @@ public class Player {
     private final int jerseyNumber;
 
     public Player(String name, String lastName, String sport, int age, int jerseyNumber) {
+        if (jerseyNumber < 0 || jerseyNumber > 99) {
+            throw new IllegalArgumentException("jerseyNumber should be between 0 and 99.");
+        }
         this.name = name;
         this.lastName = lastName;
         this.sport = sport;
