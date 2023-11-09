@@ -29,7 +29,7 @@ Type inference doesn't work for class fields.
 
 ## Records
 Record are introduce in Java to give a way to describe data. Records are a quick and concise because they automatically generates constructors, getter, equals and hash code methods.
-It’s important to note that records are immutable, so you can’t change their values after the initialization.
+It’s important to note that records are immutable, so you can’t change their values after the initialization. And they cannot extends any class and cannot be extended too.
 Here is an example of a simple class called Player with 2 fields (64 lines), and a record of the same structure (4 lines).
 - [Records showcase](https://github.com/Mehdi-17/java8_to_17_newFeatures/blob/main/src/main/java/com/activit/sfeir/Records/RecordsExampleTest.java)
 
