@@ -13,6 +13,10 @@ Java 9 introduced two methods for the List interface :
 Java 16 introduced toList() method directly on streams. This method returns a immutable list that can contain  null values.
 - [Jump to demo](https://github.com/Mehdi-17/java8_to_17_newFeatures/blob/main/src/main/java/com/activit/sfeir/ListFeatures/ListFeaturesTest.java)
 
+## Sealed Types
+A sealed type in Java restricts which classes or interfaces can extend or implement it. It provides a controlled hierarchy, allowing you to specify a fixed set of permitted subtypes, which can enhance code security, maintainability, and ensure that all possible subtypes are known and handled within the codebase.
+- [See sealed types demo here](https://github.com/Mehdi-17/java8_to_17_newFeatures/blob/main/src/main/java/com/activit/sfeir/SealedTypes/SealedTypesTest.java)
+
 ## New Switch syntax
  Java 12 introduced a new syntax for the switch statement, making it more concise and easier to read.
  - [Switch statement code](https://github.com/Mehdi-17/java8_to_17_newFeatures/blob/main/src/main/java/com/activit/sfeir/SwitchSyntax/SwitchSyntaxExampleTest.java)
