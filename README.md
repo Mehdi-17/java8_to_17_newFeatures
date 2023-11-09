@@ -5,10 +5,12 @@ This repository is a personal learning resource for me, covering the evolution o
 From the readme, you can explore the evolution of the Java language from version 8 to the latest Java 17.  
 Below, you'll find links to various Java features and enhancements:
 
-## New methods for List Interface
+## 2 New methods for List Interface and a new method on streams
 Java 9 introduced two methods for the List interface : 
-1) List.of() allows you to create an immutable list of elements.
-2) In addition, List.copyOf() allows you to copy a collection of objects and return an immutable list as well. It's important to note that if you attempt to make a copy of an immutable list using List.copyOf(), it will create a reference to the same object.
+1) List.of() allows you to create an immutable list of elements. This method cannot contains null values.
+2) In addition, List.copyOf() allows you to copy a collection of objects and return an immutable list as well. It's important to note that if you attempt to make a copy of an immutable list using List.copyOf(), it will create a reference to the same object. This method cannot contains null values.
+
+Java 16 introduced toList() method directly on streams. This method returns a immutable list that can contain  null values.
 - [Jump to demo](https://github.com/Mehdi-17/java8_to_17_newFeatures/blob/main/src/main/java/com/activit/sfeir/ListFeatures/ListFeaturesTest.java)
 
 ## New Switch syntax
