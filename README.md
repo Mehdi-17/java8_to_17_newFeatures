@@ -18,7 +18,7 @@ A sealed type in Java restricts which classes or interfaces can extend or implem
 - [See sealed types demo here](https://github.com/Mehdi-17/java8_to_17_newFeatures/blob/main/src/main/java/com/activit/sfeir/SealedTypes/SealedTypesTest.java)
 
 ## New Switch syntax
- Java 12 introduced a new syntax for the switch statement, making it more concise and easier to read.
+ Java 12 introduced a new syntax for the switch statement and key word (yield), making it more concise and easier to read.
  - [Switch statement code](https://github.com/Mehdi-17/java8_to_17_newFeatures/blob/main/src/main/java/com/activit/sfeir/SwitchSyntax/SwitchSyntaxExampleTest.java)
 
 ## New Pattern Matching for the instanceof operator
