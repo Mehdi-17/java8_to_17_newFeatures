@@ -4,16 +4,6 @@ import org.junit.jupiter.api.Test;
 
 public class SwitchSyntaxExampleTest {
 
-    @Test
-    public void switchSyntaxExample() {
-        //Will print the same thing
-        oldSwitchSyntax("Pauleta");
-        newSwitchSyntax("Pauleta");
-        System.out.println(switchReturnValue("Wednesday"));
-        switchToSetVariable(180);
-        switchUsingYieldKeyWord(3);
-    }
-
     private void oldSwitchSyntax(String player) {
         switch (player) {
             case "Ronaldinho":
@@ -74,5 +64,37 @@ public class SwitchSyntaxExampleTest {
             }
         };
         System.out.println(type);
+    }
+
+    private void switchOnType(Animal animal) {
+        var sound = switch (animal) {
+            case Cat cat -> cat.meow();
+            case Dog dog -> dog.ouaf();
+            default -> "Meuh";
+        };
+
+        System.out.println(sound);
+    }
+
+    @Test
+    public void switchSyntaxExample() {
+        //Will print the same thing
+        oldSwitchSyntax("Pauleta");
+        newSwitchSyntax("Pauleta");
+        System.out.println(switchReturnValue("Wednesday"));
+        switchToSetVariable(180);
+        switchUsingYieldKeyWord(3);
+
+        Animal idefix = new Dog("ouaf");
+        switchOnType(idefix);
+    }
+
+    interface Animal {
+    }
+
+    record Dog(String ouaf) implements Animal {
+    }
+
+    record Cat(String meow) implements Animal {
     }
 }

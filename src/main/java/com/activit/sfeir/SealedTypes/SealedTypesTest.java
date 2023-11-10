@@ -13,7 +13,7 @@ public class SealedTypesTest {
         System.out.println(maxSpeed(bus1));
     }
 
-    // By doing it this way, we have all our algorithms in the same place instead of having a method in each record.
+    // By doing it this way, we have all our algorithms in the same place instead of having an implemented method in each record.
     // Moreover, we can use types created by someone else and add operations to them.
     int maxSpeed(Vehicle vehicle) {
         return switch (vehicle) {
