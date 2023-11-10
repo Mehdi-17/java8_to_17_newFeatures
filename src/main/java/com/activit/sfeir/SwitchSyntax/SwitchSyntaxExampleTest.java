@@ -9,6 +9,9 @@ public class SwitchSyntaxExampleTest {
         //Will print the same thing
         oldSwitchSyntax("Pauleta");
         newSwitchSyntax("Pauleta");
+        System.out.println(switchReturnValue("Wednesday"));
+        switchToSetVariable(180);
+        switchUsingYieldKeyWord(3);
     }
 
     private void oldSwitchSyntax(String player) {
@@ -34,5 +37,42 @@ public class SwitchSyntaxExampleTest {
             case "Ronaldo" -> System.out.println("Real Madrid");
             default -> System.out.println("Nothing");
         }
+    }
+
+    private String switchReturnValue(String day) {
+        return switch (day) {
+            case "Monday", "Tuesday" -> "Working from office";
+            case "Wednesday", "Thursday", "Friday" -> "Working Remotely";
+            default -> "Not a working day";
+        };
+    }
+
+    private void switchToSetVariable(int height) {
+        String clothingSizing = switch (height) {
+            case 160 -> "XS";
+            case 170 -> "S";
+            case 180 -> "M";
+            case 190 -> "L";
+            default -> "Give us a rounded value";
+
+        };
+        System.out.println(clothingSizing);
+    }
+
+    private void switchUsingYieldKeyWord(int seats) {
+        //yield key word is used to produce a value from a case block surrounding by '{}' in a switch statement
+        var type = switch (seats) {
+            case 1 -> "small";
+            case 2, 3 -> {
+                //just to showing the new key word yield
+                var mid = "medium ";
+                yield mid + seats;
+            }
+            default -> {
+                var s = "this 's' is a new variable because we are in another scope";
+                yield "big";
+            }
+        };
+        System.out.println(type);
     }
 }
