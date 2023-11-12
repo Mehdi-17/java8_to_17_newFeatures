@@ -13,29 +13,41 @@ Java 9 introduced two methods for the List interface :
 Java 16 introduced toList() method directly on streams. This method returns a immutable list that can contain  null values.
 - [Jump to demo](https://github.com/Mehdi-17/java8_to_17_newFeatures/blob/main/src/main/java/com/activit/sfeir/ListFeatures/ListFeaturesTest.java)
 
+<br>
+
 ## Sealed Types
 A sealed type in Java restricts which classes or interfaces can extend or implement it. It provides a controlled hierarchy, allowing you to specify a fixed set of permitted subtypes, which can enhance code security, maintainability, and ensure that all possible subtypes are known and handled within the codebase.
 - [See sealed types demo here](https://github.com/Mehdi-17/java8_to_17_newFeatures/blob/main/src/main/java/com/activit/sfeir/SealedTypes/SealedTypesTest.java)
 
+<br>
+
 ## New Switch syntax
  Java 12 introduced a new syntax for the switch statement and key word (yield), making it more concise and easier to read.
  - [Switch statement code](https://github.com/Mehdi-17/java8_to_17_newFeatures/blob/main/src/main/java/com/activit/sfeir/SwitchSyntax/SwitchSyntaxExampleTest.java)
+
+<br>
 
 ## New Pattern Matching for the instanceof operator
 Java 14 introduced a new enhancement called "Pattern Matching for the instanceof operator" which simplifies the code when working with object types.  
 With the new syntax, you can create a variable within the if statement to increase readability :
 - [Pattern matching code sample](https://github.com/Mehdi-17/java8_to_17_newFeatures/blob/main/src/main/java/com/activit/sfeir/Instanceof/InstanceOfUseTest.java)
 
+<br>
+
 ## Type Inference
 Java introduced type inference since Java 10. They add the 'var' word (not a key word for backward compatibility) to initialize a variable.  
 Type inference doesn't work for class fields.
 - [Discover type inference](https://github.com/Mehdi-17/java8_to_17_newFeatures/blob/main/src/main/java/com/activit/sfeir/TypeInference/TypeInferenceTest.java)
+
+<br>
 
 ## Records
 Record are introduce in Java to give a way to describe data. Records are a quick and concise because they automatically generates constructors, getter, equals and hash code methods.
 It’s important to note that records are immutable, so you can’t change their values after the initialization. And they cannot extends any class and cannot be extended too.
 Here is an example of a simple class called Player with 2 fields (approximately 65 lines), and a record of the same structure (approximately 10 lines).
 - [Records showcase](https://github.com/Mehdi-17/java8_to_17_newFeatures/blob/main/src/main/java/com/activit/sfeir/Records/RecordsExampleTest.java)
+
+<br>
 
 ## Text Block
 In traditional Java code, multiline strings could be hard to write with lots of escape characters and concatenation.  
