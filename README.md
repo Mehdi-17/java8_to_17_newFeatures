@@ -54,6 +54,8 @@ In traditional Java code, multiline strings could be hard to write with lots of 
 With the introduction of text blocks in Java, working with multiline strings has become significantly more straightforward and readable.
 - [Text Block example](https://github.com/Mehdi-17/java8_to_17_newFeatures/blob/main/src/main/java/com/activit/sfeir/TextBlock/TextBlockTest.java)
 
+<br>
+
 ## Meaningful NullPointerException message
 Since Java 14, Java provides more informative details about the variable or expression that was null. This improvement facilitates quicker and more precise identification of the cause of a null reference, enhancing the debugging experience for developers
 - [See test cases](https://github.com/Mehdi-17/java8_to_17_newFeatures/blob/main/src/main/java/com/activit/sfeir/MeaningFulNPE/MeaningFulNpeTest.java)
